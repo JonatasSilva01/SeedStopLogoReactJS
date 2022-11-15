@@ -23,16 +23,37 @@ button {
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 0.3s linear;
+
+    background-color: rgba(83, 80, 80, 0.223);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
   }
   
   .speed {
     animation: App-logo-spin-speed-reverse infinite 1s linear;
+    background-color: rgba(83, 80, 80, 0.47);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
   }
 
   .StopColor {
     background-color: rgb(241, 27, 27);
     color: white;
     border-color: white;
+
+    width: 400px;
+  }
+
+  .text-white {
+    color: white;
+    transition: all ease 5s;
+  }
+
+  .text-red {
+    color: red;
+    transition: all ease 5s;
   }
 }
 
@@ -61,7 +82,7 @@ button {
 }
 @keyframes App-logo-spin-speed-reverse {
   from {
-    transform: rotate(180deg);
+    transform: rotate(300deg);
   }
   to {
     transform: rotate(0deg);
