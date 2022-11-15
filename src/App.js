@@ -3,18 +3,18 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [speed, setSpeed] = useState(false);
+  const [speed, setSpeed] = useState(true);
   const speedClass = speed ? 'speed' : 'Stop';
-
-  const [counter, setConter] = useState(0);
 
   const [btnStopColor, setBtnStopColor] = useState(false);
   const btnStopColorClass = btnStopColor ? 'StopColor' : ''
+  
+  const [counter, setConter] = useState(0);
 
   const hendless = () => {
     setSpeed(!speed);
     setBtnStopColor(!btnStopColor);
-    setConter(counter + 1);
+    setConter((counter) => counter + 1);
   }
 
   return (
