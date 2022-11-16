@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.nivel-hard {
+  color: #ffc400;
+}
+
+.nivel-ease {
+  color: #21d421;
+}
+
+.nivel-profissional {
+  color:rgb(255, 98, 0);
+}
+
 button {
   padding: 1rem;
   color:#61dafb;
