@@ -14,7 +14,8 @@ function App() {
   
   const [counter, setConter] = useState(0);
   // [🔨]  pegue o contador e faça que ele mude de cor do texto apartir de 10 clicks;
-  const nivelCounter = (counter >= 10) 
+  const nivelCounter = 
+    counter >= 10 
     ? 'nivel-hard' 
     : 'nivel-ease';
 
@@ -31,7 +32,7 @@ function App() {
         <h2 className={`${textColorRedClass}`}>Speener React Js</h2>
         <img src={logo} className={`App-logo ${speedClass}`} alt="logo" />
         {counter <= 0 ? null :  <h1>Apertei botão <strong class={`${nivelCounter}`}>{counter}</strong> vezes </h1>}
-        <button className={`${btnStopColorClass}`} type='button' onClick={hendless}>{speedClass}</button>
+        <button className={`${btnStopColorClass}`} type='button' onClick={hendless}>{counter <= 0 ? 'Start' : speedClass}</button>
       </header>
     </div>
   );
